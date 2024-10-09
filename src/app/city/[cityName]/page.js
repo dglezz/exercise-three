@@ -23,6 +23,7 @@ export default async function City({ params }) {
           cloudiness={weatherData.clouds.all}
           humidity={weatherData.main.humidity}
           windSpeed={weatherData.wind.speed}
+          weatherType={weatherData.weather[0].main}
         />
       </main>
     </div>

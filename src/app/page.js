@@ -3,7 +3,7 @@ import WeatherCard from "./components/WeatherCard";
 import styles from "./page.module.css";
 
 export default async function Home() {
-  const city = "Boston";
+  const city = "BOSTON";
   const queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.WEATHER_API_KEY}&units=imperial`;
 
   const request = await fetch(queryURL);
@@ -21,6 +21,7 @@ export default async function Home() {
           highTemperature={weatherData.main.temp_max}
           lowTemperature={weatherData.main.temp_min}
           cloudiness={weatherData.clouds.all}
+          weatherType={weatherData.weather[0].main}
           humidity={weatherData.main.humidity}
           windSpeed={weatherData.wind.speed}
         />

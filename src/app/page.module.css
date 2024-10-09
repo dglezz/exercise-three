@@ -1,8 +1,24 @@
-.page {
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-.main {
+/* .page {
+  .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+  }
+} */
+
+.page {
+  min-height: 100vh; /* Ensures it takes up the full viewport height */
+  width: 100%; /* Ensures full width */
+  background-color: #edf2f7; /* Change this color as needed */
+  font-family: "Poppins", sans-serif;
+  /* Removes any default margin */
 }
+/* .main {
+} */
 
 .header nav {
   /* background-color: lightblue; */
@@ -17,6 +33,7 @@
   justify-content: flex-end;
   margin: 0 auto;
   max-width: 1180px;
+  margin-right: 20px;
 }
 
 .header nav ul li {
@@ -24,8 +41,95 @@
 }
 
 .header nav ul li a {
-  color: black;
-  font-size: 24px;
-  font-weight: 800;
+  color: #37474f;
+  font-size: 30px;
+  font-weight: 400;
   text-decoration: none;
+}
+
+.weather_card {
+  background-color: #e0f7fa;
+  border-radius: 20px;
+  padding: 40px;
+  width: 800px;
+  height: auto;
+  margin: 40px auto;
+  margin-top: 90px;
+  box-shadow: 0 4px 15px #b0bec5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top_section {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.top_section h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #37474f;
+}
+
+.top_section p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #37474f;
+}
+
+.middle_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 65px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.weather_icon {
+  color: #89afc252;
+}
+
+.temperature_text {
+  font-size: 100px;
+  color: #37474f;
+}
+
+.bottom_section {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.detail_box {
+  background-color: #0289d152;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px #b0bec5;
+  width: 125px;
+  height: 80px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Stack label and value vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+.detail_label {
+  font-size: 16px;
+  color: #37474f;
+  margin-bottom: 4px; /* Space between label and value */
+}
+
+.detail_value {
+  font-size: 16px; /* Larger font size for the value */
+  color: #37474f;
+  font-weight: 10;
 }

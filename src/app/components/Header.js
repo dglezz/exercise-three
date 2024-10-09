@@ -6,16 +6,16 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <a href="/city/Paris">Paris</a>
+            <a href="/city/Paris">PARIS</a>
           </li>
           <li>
-            <a href="/city/London">London</a>
+            <a href="/city/London">LONDON</a>
           </li>
           <li>
-            <a href="/city/Rome">Rome</a>
+            <a href="/city/Rome">ROME</a>
           </li>
           <li>
-            <a href="/city/Monaco">Monaco</a>
+            <a href="/city/Monaco">MONACO</a>
           </li>
         </ul>
       </nav>

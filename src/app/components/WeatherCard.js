@@ -25,17 +25,23 @@ export default function WeatherCard({
       {/* Icon and Temperature Div */}
       <div className={styles.middle_section}>
         <WeatherIcon weatherType={weatherType} />
-        <p className={styles.temperature_text}>{currentTemperature}°F</p>
+        <p className={styles.temperature_text}>
+          {Math.round(currentTemperature)}°F
+        </p>
       </div>
 
       <div className={styles.bottom_section}>
         <div className={styles.detail_box}>
           <div className={styles.detail_label}>HIGH</div>
-          <div className={styles.detail_value}>{highTemperature}°F</div>
+          <div className={styles.detail_value}>
+            {Math.round(highTemperature)}°F
+          </div>
         </div>
         <div className={styles.detail_box}>
           <div className={styles.detail_label}>LOW</div>
-          <div className={styles.detail_value}>{lowTemperature}°F</div>
+          <div className={styles.detail_value}>
+            {Math.round(lowTemperature)}°F
+          </div>
         </div>
         <div className={styles.detail_box}>
           <div className={styles.detail_label}>CLOUDINESS</div>

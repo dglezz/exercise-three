@@ -91,7 +91,7 @@
 }
 
 .weather_icon {
-  color: #89afc252;
+  color: #5a727d52;
 }
 
 .temperature_text {
@@ -109,7 +109,7 @@
 .detail_box {
   background-color: #0289d152;
   border-radius: 10px;
-  box-shadow: 0 4px 15px #b0bec5;
+  box-shadow: 0 4px 15px #b8c4ca;
   width: 125px;
   height: 80px;
   margin-top: 30px;

@@ -1,6 +1,7 @@
 import styles from "../page.module.css";
 import WeatherIcon from "./WeatherIcon";
 
+// rgba(62, 150 , 225
 export default function WeatherCard({
   city,
   currentTemperature,
@@ -12,7 +13,10 @@ export default function WeatherCard({
   weatherType,
 }) {
   return (
-    <div className={styles.weather_card}>
+    <div
+      className={styles.weather_card}
+      style={{ backgroundColor: `rgba(110, 199 , 243 , 0.${cloudiness})` }}
+    >
       <div className={styles.top_section}>
         <h2>{city}</h2>
         <p> {weatherType} </p>
